@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>index page</title>
-  </head>
-  <body>
-    오 좋다2
-    야이씨
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>index page</title>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: rgb(222, 192, 84);
+    }
+
+    .wrap {
+      display: block;
+      width: 450px;
+      height: 450px;
+      margin: 0 auto;
+      position: relative;
+      top: 200px;
+    }
+
+    .face {
+      width: 450px;
+      height: 450px;
+      border: 3px solid black;
+      border-radius: 50%;
+      margin: auto;
+      position: absolute;
+      z-index: 1000;
+      background-color: rgb(184, 139, 51);
+    }
+
+    .ear,
+    .ear2 {
+      width: 100px;
+      height: 100px;
+      border: 3px solid black;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      background-color: rgb(184, 139, 51);
+    }
+
+    .ear {
+      left: 25px;
+      top: 0;
+    }
+
+    .ear2 {
+      right: 25px;
+      top: 0;
+    }
+
+    .face>ul {
+      position: absolute;
+      top: 182px;
+      left: 74px;
+    }
+
+    .face>ul li {
+      float: left;
+      list-style: none;
+      width: 90px;
+      margin-right: 120px;
+    }
+
+    .face>ul li:last-child {
+      margin-right: 0;
+    }
+
+    .eyebrow {
+      width: inherit;
+      height: 15px;
+      background: black;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .face>ul li a {
+      display: block;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: black;
+      margin: auto;
+    }
+
+    .middle {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 225px;
+      right: 150px;
+    }
+
+    .nose {
+      width: 40px;
+      height: 40px;
+      background: black;
+      border-radius: 50%;
+      margin: auto;
+      position: absolute;
+      z-index: 100000;
+      left: 52px;
+    }
+
+    .middle .undernose .under {
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 50%;
+      border: 3px solid black;
+      display: block;
+    }
+
+    .undernose {
+      width: 300px;
+      position: absolute;
+      top: 10px;
+      left: 6px;
+      z-index: 10000;
+    }
+
+    .undernose .under {
+      margin: 0;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="face">
+      <ul>
+        <li>
+          <div class="eyebrow"></div>
+          <a class="eye" href="#"></a>
+        </li>
+        <li>
+          <div class="eyebrow"></div>
+          <a class="eye" href="#"></a>
+        </li>
+      </ul>
+
+      <div class="middle">
+        <div class="nose"></div>
+        <ul class="undernose">
+          <li class="under"></li>
+          <li class="under"></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="ear"></div>
+    <div class="ear2"></div>
+  </div>
+
+</body>
+
 </html>
